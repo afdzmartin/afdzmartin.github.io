@@ -1,2 +1,2 @@
-# afdzmartin.github.io
-Práctica final MiriadaX
+# web
+Repositorio de código con ejemplo de página web sencilla pero eficaz.
