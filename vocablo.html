@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vocabulario</title>
+        <script>
+            
+            var lista=[];
+            var listaPract=[]; //lista con las palabras a practicar
+            function cargarRopa(lista){
+               lista.push(["camisa","shirt"]);
+               lista.push(["cinturón","belt"]);
+               lista.push(["gorra","cap"]);
+               lista.push(["gafas","glasses"]);
+               lista.push(["guantes","gloves"]);
+               lista.push(["combinar","go with/together"]);
+               lista.push(["bolso de mano","handbag"]);
+               lista.push(["pañuelo","handkerchief"]);
+               lista.push(["sombrero","hat"]);
+               lista.push(["chaqueta","jacket"]);
+               lista.push(["combinar bien","match"]);
+               lista.push(["ropa interior","pants"]);
+               lista.push(["jersey","pullover"]);
+               lista.push(["poner","put on"]);
+               lista.push(["bolso mujer","purse"]);
+               lista.push(["bolsillo","pocket"]);
+               lista.push(["perfume","perfume"]);
+               lista.push(["estampado","pattern"]);
+               lista.push(["pasado de moda","old-fashioned"]);
+               lista.push(["collar","necklace"]);
+               lista.push(["maquillaje","make-up"]);
+               lista.push(["cuero","leather"]);
+               lista.push(["colada","laundry"]);
+               lista.push(["etiqueta/marca","label"]);
+               lista.push(["tejer","knit"]);
+               lista.push(["equipo","kit"]);
+               lista.push(["suéter","jumper"]);
+               lista.push(["joyas","jewellery"]);
+               lista.push(["vaqueros","jeans"]);
+               lista.push(["gorra","cup"]);
+               lista.push(["mochila","backpack"]);
+               lista.push(["bolsa","bag"]);
+               lista.push(["blusa","blouse"]);
+               lista.push(["bota","boot"]);
+               lista.push(["pulsera","bracelet"]);
+               lista.push(["botón","button"]);
+               lista.push(["cadena","chain"]);
+               lista.push(["ropa","clothes"]);
+               lista.push(["abrigo","coat"]);
+               lista.push(["cuello camisa","collar"]);
+               lista.push(["algodón","cotton"]);
+               lista.push(["vestido","dress"]);
+               lista.push(["pendientes","earrings"]);
+               lista.push(["moda","fashion"]);
+               lista.push(["atar","fasten"]);
+               lista.push(["ajustar","fit"]);
+               lista.push(["doblar","fold"]);
+               lista.push(["collar personas","necklace"]);
+               lista.push(["manga","sleeve"]);
+               lista.push(["jersey","sweatshirt"]);
+               lista.push(["ropa interior","underwear"]);
+               
+               lista.push(["lana","wool"]);
+               lista.push(["llevar puesto","wear"]);
+               lista.push(["reloj de pulsera","watch"]);
+               lista.push(["cartera","wallet"]);
+               lista.push(["uniforme","uniform"]);
+               lista.push(["desvestirse","undress"]);
+               lista.push(["calzoncillos","underpants"]);
+               lista.push(["paraguas","umbrella"]);
+               lista.push(["probarse","try on"]);
+               lista.push(["zapatillas deportivas","trainers"]);
+               lista.push(["chandal","tracksuit"]);
+               lista.push(["medias","tights"]);
+               lista.push(["corbata","tie"]);
+               lista.push(["quitarse","take off"]);
+               lista.push(["camiseta","t-shirt"]);
+               lista.push(["bañador de hombre","swimsuit"]);
+               lista.push(["bañador mujer","swimming costume"]);
+               lista.push(["jersey","sweater"]);
+               lista.push(["gafas de sol","sunglasses"]);
+               lista.push(["traje","suit"]);
+               lista.push(["ralla","stripe"]);
+               lista.push(["calcetines","socks"]);
+               lista.push(["sin manga","sleeveless"]);
+               lista.push(["falda","skirt"]);
+               lista.push(["tamaño","size"]);
+               lista.push(["seda","silk"]);
+               lista.push(["pantalón corto","short"]);
+               lista.push(["zapato","shoe"]);
+               lista.push(["camisa","shirt"]);
+               lista.push(["bufanda","scarf"]);
+               lista.push(["sandalia","sandal"]);
+               lista.push(["anillo","ring"]);
+               lista.push(["chubasquero","raincoat"]);
+               document.getElementById("numPal").max=lista.length;
+               document.getElementById("practica").disabled=false;
+               document.getElementById("numPal").disabled=false;
+            }
+            function cargarCole(lista){
+               
+                lista.push(["colegio","school"]);
+               lista.push(["aula","classroom"]);
+               lista.push(["clase","class"]);
+               lista.push(["faltar","absent"]);
+               lista.push(["avanzado","advance"]);
+               lista.push(["arte","art"]);
+               lista.push(["novato","beginner"]);
+               lista.push(["timbre","bell"]);
+               lista.push(["biología","biology"]);
+               lista.push(["pizarra","blackboard"]);
+               lista.push(["tablón","board"]);
+               lista.push(["libro","book"]);
+               lista.push(["estantería de libros","bookshelf"]);
+               lista.push(["interrumpir","break up"]);
+               lista.push(["pausa","break"]);
+               lista.push(["certificado","certificate"]);
+               lista.push(["química","chemistry"]);
+               lista.push(["listo","clever"]);
+               lista.push(["entrenador","coach"]);
+               lista.push(["facultad","college"]);
+               lista.push(["redacción","composition"]);
+               lista.push(["curso","course"]);
+
+
+               document.getElementById("numPal").max=lista.length;
+               document.getElementById("numPal").disabled=false;
+               document.getElementById("practica").disabled=false;
+
+            }
+            function cargarComida(lista){
+                alert("se carga la comida");
+            }
+             function cargarComunic(lista){
+                lista.push(["dirección","address"]);
+                lista.push(["marcar número teléfono","dial up"]);
+                lista.push(["calculadora","calculator"]);
+                lista.push(["por correo","by post"]);
+                lista.push(["blogero","blogger"]);
+                lista.push(["conectado","online"]);
+                lista.push(["titular","headline"]);
+                lista.push(["red","net"]);
+                lista.push(["acceso","access"]);
+             }
+            function cargar(){
+                var secciones=document.getElementsByClassName("sect");
+                for(var i=0;i<secciones.length;i++)
+                    if(secciones[i].checked)
+                        {
+                            switch(secciones[i].value){
+                                case "ropa": cargarRopa(lista);
+                                            break;
+                                case "cole":cargarCole(lista);
+                                            break;
+                                case "comida":cargarComida(lista);
+                                            break;    
+                                case "comunic":cargarComuninc(lista);
+                                            break;                
+                            }
+                        }       
+            }
+            function ver(lista){
+                
+                var indice=new Array(lista.length); //para comprobar que no se repiten las palabras
+                var limite=document.getElementById("numPal").value; //controla cuántas palabras se van a practicar
+                var elTabla=document.getElementById("res");
+                for(var i=0;i<limite;i++){
+                    elTr=document.createElement("tr");
+                    elTd=document.createElement("td");
+                    listaPract.push(cargaPal(lista,indice)); //carga de entre todas las palabras el número que se desea y sin repetir
+                    var texto=document.createTextNode(listaPract[i][1]);
+                     elTd.appendChild(texto);
+                     elTr.appendChild(elTd);
+                     elTd=document.createElement("td");
+                     elInput=document.createElement("input");
+                        elInput.type="text";
+                        elInput.className="res";
+                        elTd.appendChild(elInput); //añadimos el input a la celda
+                        elTr.appendChild(elTd);
+                    elTabla.appendChild(elTr);
+            }
+            document.getElementById("fin").disabled=false;
+        }
+            function cargaPal(lista,indice){ //devuelve una palabra aleatoria no repetida
+               
+                var valor=Math.floor(Math.random()*lista.length);
+                while(indice[valor]) //controlamos que no esté repetida
+                    valor=Math.floor(Math.random()*lista.length);
+                indice[valor]=true; //marcamos como usada
+                return lista[valor];    //devolvemos la palabra
+
+            }
+            function comprobar(listaPract){
+                palabras=document.getElementsByClassName("res");
+                for(var i=0;i<palabras.length;i++)
+                    if(listaPract[i][0]!=palabras[i].value)
+                        palabras[i].style.backgroundColor="red";
+                    else    
+                    palabras[i].style.backgroundColor="white";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>VOCABULINEITOR V1.0</h1>
+        <p>Elije las secciones que quieres practicar</p>
+        <form name="voca">
+            Clothes<input type="checkbox" value="ropa" class="sect"><br>
+            Communications<input type="checkbox" value="comunic" class="sect"><br>
+            Education<input type="checkbox" value="cole" class="sect"><br>
+            Food<input type="checkbox" value="comida" class="sect"><br>
+            <input type="button" value="siguiente" onclick="cargar()"><br>
+            ¿Cuántas palabras desea practicar? <input type="number" value="1" min="1" id="numPal" disabled><br>
+            <input type="button" value="PRACTICAR" id="practica" disabled onclick="ver(lista)">
+            <table id="res" border=1> 
+            </table>
+            <input type="button" value="Comprobar" onclick="comprobar(listaPract)" disabled id="fin" >
+        </form>
+    </body>
+</html>
